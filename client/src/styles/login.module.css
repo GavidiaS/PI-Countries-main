@@ -1,0 +1,115 @@
+.login {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--colorOne);
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form label {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.form label span {
+  width: 100%;
+  max-width: 200px;
+  height: 10px;
+  font-size: 1.2rem;
+  color: #F00;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+.form label input {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  background: none;
+  background-color: #C0DFA190;
+  font-size: 1.6rem;
+  color: var(--colorOne);
+  text-align: center;
+  transition: all .3s;
+}
+.form label input:hover, .form label input:focus {
+  background-color: var(--colorFive);
+}
+.form label input::placeholder {
+  color: var(--colorOne);
+}
+.form button {
+  outline: none;
+  border: none;
+  background: none;
+  width: 100%;
+  max-width: 300px;
+  height: 20px;
+  background-color: #C0DFA190;
+  cursor: pointer;
+  transition: all .3s;
+}
+.form button:hover {
+  background-color: var(--colorFive);
+}
+.form button:disabled {
+  background-color: var(--colorThree);
+}
+.form label input + button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--colorFive);
+  margin-top: 10px;
+  opacity: 0.8;
+  transition: all .3s;
+}
+.form label input + button:hover {
+  opacity: 1;
+}
+.login a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--colorOne);
+  width: max-content;
+  height: max-content;
+  padding: 3px;
+  margin-top: 30px;
+  background-color: #C0DFA190;
+  transition: all .3s;
+}
+.login a:hover {
+  background-color: var(--colorFive);
+}
+
+@media screen and (min-width: 250px) {
+  .form label input {
+    border-radius: 10px;
+  }
+  .login a {
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 300px) {
+  .form button {
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .login {
+    border-radius: 10px;
+  }
+}

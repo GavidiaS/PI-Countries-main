@@ -1,0 +1,27 @@
+:root {
+  --colorOne: #011936;
+  --colorTwo: #465362;
+  --colorThree: #82A3A1;
+  --colorFour: #9FC490;
+  --colorFive: #C0DFA1;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #505050;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--colorOne);
+}

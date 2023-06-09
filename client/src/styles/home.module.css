@@ -1,0 +1,25 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+}
+.add {
+  text-decoration: none;
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  font-size: 1.6rem;
+  color: var(--colorOne);
+  position: absolute;
+  top: 40px;
+  left: -50px;
+  background-color: var(--colorFive);
+  opacity: 0.8;
+  border-radius: 10px;
+  transition: all .3s;
+}
+.add:hover {
+  opacity: 1;
+  transform: translateX(60px);
+}

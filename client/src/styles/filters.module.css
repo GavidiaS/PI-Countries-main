@@ -1,0 +1,101 @@
+.filters {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: #0008;
+}
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  background-color: var(--colorOne);
+  padding: 40px;
+}
+.contain button {
+  font-size: 1rem;
+  color: var(--colorOne);
+  margin-bottom: 20px;
+}
+.fil, .ord {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.fil article, .ord article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+.fil article h2, .ord article h2 {
+  font-size: 2rem;
+  color: var(--colorFive);
+  margin-bottom: 15px;
+}
+.fil article div, .ord article div {
+  width: 100%;
+  max-width: 200px;
+  height: 100px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: var(--colorThree);
+}
+.fil article div label, .ord article div label {
+  font-size: 1.6rem;
+  color: var(--colorOne);
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+  transition: all .3s;
+}
+.fil article div label input, .ord article div label input {
+  display: none;
+}
+.fil article div label span, .ord article div label span {
+  padding: 5px;
+}
+.fil article div label:hover, .ord article div label:hover {
+  background-color: var(--colorFive);
+}
+.fil article div label input:checked + span, .ord article div label input:checked + span {
+  background-color: var(--colorFive);
+}
+.fil label:first-child, .ord label:first-child {
+  user-select: none;
+}
+.fil label:first-child:hover, .ord label:first-child:hover {
+  background: none;
+}
+.but {
+  display: flex;
+  justify-content: space-evenly;
+}
+.but button {
+  margin: 10px 20px;
+}
+.ord article div label input:disabled + span {
+  background-color: var(--colorTwo);
+}
+
+@media screen and (min-width: 800px) {
+  .contain {
+    border-radius: 50px;
+  }
+  .contain button {
+    font-size: 1.4rem;
+  }
+}

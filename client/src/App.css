@@ -1,0 +1,15 @@
+body {
+  background-image: url("./assets/home.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 6vh;
+}
+header, footer, main {
+  width: 100%;
+}
+header, footer {
+  min-height: 6vh;
+}
+main {
+  min-height: 88vh;
+}

@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: var(--colorOne);
+}
+.header button {
+  outline: none;
+  border: none;
+  background: none;
+  width: max-content;
+  height: max-content;
+  font-size: 2rem;
+  color: var(--colorOne);
+  padding: 3px;
+  margin: 0 50px;
+  background-color: var(--colorFive);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .3s linear;
+}
+.header button:hover {
+  transform: scale(1.1);
+}
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.init {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  position: relative;
+}
+.init img {
+  width: 100%;
+  height: 100%;
+}
+.init a {
+  display: block;
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  top: 200px;
+  left: 15%;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--colorOne);
+  padding: 4px;
+  background-color: var(--colorFive);
+  border-radius: 10px;
+  transition: all .3s;
+  opacity: .8;
+}
+.init a:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+@media screen and (min-width: 401px) {
+  .header {
+    left: calc(50% - 200px);
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .init img {
+    border-radius: 10px;
+  }
+  .init a {
+    font-size: 4rem;
+  }
+}

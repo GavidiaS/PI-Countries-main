@@ -1,0 +1,105 @@
+.creator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contain {
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--colorOne);
+  padding: 20px 0;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 15 px;
+}
+.form label h2 {
+  font-size: 1.8rem;
+  color: var(--colorFive);
+  text-align: center;
+}
+.form label input {
+  outline: none;
+  border: none;
+  background: var(--colorFive);
+  width: 100%;
+  height: 30px;
+  padding: 4px;
+  font-size: 1.8rem;
+  color: var(--colorOne);
+  text-align: center;
+  opacity: 0.8;
+}
+.form label input::placeholder {
+  color: var(--colorOne);
+}
+.form label input:hover, .form label input:focus {
+  opacity: 1;
+}
+.form label input[type="range"], .form label input[type="time"] {
+  cursor: pointer;
+}
+.form label select {
+  outline: none;
+  width: 100%;
+  height: 300px;
+  background: var(--colorFive);
+  cursor: pointer;
+}
+.form label select option {
+  font-size: 1.8rem;
+  color: var(--colorOne);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.form label select option:hover {
+  background-color: var(--colorThree);
+}
+.form label span {
+  width: 100%;
+  height: 20px;
+  font-size: 1.2rem;
+  color: #F00;
+  text-align: center;
+  margin-top: 10px;
+}
+.form button {
+  outline: none;
+  border: none;
+  background: var(--colorFive);
+  width: 100%;
+  max-width: 300px;
+  height: max-content;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: var(--colorOne);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.form button:hover {
+  opacity: 1;
+}
+.form button:disabled {
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 200px) {
+  .form label input {
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .contain {
+    border-radius: 10px;
+  }
+}

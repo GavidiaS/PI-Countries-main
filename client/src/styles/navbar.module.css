@@ -1,0 +1,39 @@
+.nav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0008;
+  z-index: 5;
+}
+.contain {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  background-color: var(--colorOne);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contain button {
+  margin-bottom: 20px;
+}
+.contain a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--colorFive);
+  margin-bottom: 20px;
+  padding: 5px;
+  transition: all .3s;
+}
+.contain a:hover {
+  background-color: var(--colorThree);
+  transform: scale(1.2);
+  color: var(--colorOne);
+}

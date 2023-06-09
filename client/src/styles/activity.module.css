@@ -1,0 +1,65 @@
+.activity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--colorOne);
+  width: 100%;
+  max-width: 800px;
+  padding: 30px 0;
+}
+.contain div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contain button {
+  outline: none;
+  border: none;
+  background: var(--colorFive);
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+  font-size: 1.8rem;
+  color: var(--colorOne);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.tab table {
+  text-align: center;
+  width: 100%;
+}
+.tab table caption {
+  font-size: 2.5rem;
+  color: var(--colorOne);
+  background-color: var(--colorFive);
+}
+.tab table thead tr th {
+  border: 2px solid var(--colorThree);
+  font-size: 1.8rem;
+  color: var(--colorOne);
+  background-color: var(--colorThree);
+  padding: 3px;
+}
+.tab table tbody tr td {
+  border: 2px solid var(--colorFour);
+  font-size: 1.6rem;
+  color: var(--colorOne);
+  background-color: var(--colorFour);
+  padding: 2px;
+}
+
+@media screen and (min-width: 300px) {
+  .contain button {
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .contain {
+    border-radius: 10px;
+  }
+}
