@@ -9,7 +9,7 @@ const regexName = /^[A-Z][a-zA-ZáéíóúÁÉÍÓÚñÑ\s']+$/;
 export default function Creator() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { countries } = useSelector(state => state.country);
+  const { countriesOrigin } = useSelector(state => state.country);
   const { id } = useSelector(state => state.user);
   const [act, setAct] = useState({
     name: "",
@@ -133,7 +133,7 @@ export default function Creator() {
             <h2>Select one or more countries</h2>
             <select name="countries" value={act.countries} onChange={handleSelect} multiple>
               {
-                countries?.map(cn => {
+                countriesOrigin?.map(cn => {
                   return (
                     <option key={cn.id} value={cn.id}>{cn.name}</option>
                   );
