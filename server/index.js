@@ -2,7 +2,7 @@ import 'dotenv/config';
 import app from './src/app.js';
 import db from './src/db.js';
 
-const { PORT } = process.env;
+const PORT = process.env.PORT || 3001;
 const { conn } = db;
 
 conn.sync({ force: false }).then(() => {
