@@ -26,17 +26,17 @@ export default function Creator() {
     season: "",
     countries: []
   });
-  function validate(inputs) {
+  function validate(inputsautoComplete ) {
     const errors = {};
-    if (!inputs.name) errors.name = "Name is required";
-    if (!inputs.difficulty) errors.difficulty = "Difficulty is required";
-    if (!inputs.duration) errors.duration = "Duration is required";
-    if (!inputs.season) errors.season = "Season is required";
-    if (!inputs.countries) errors.countries = "Countries is required";
-    if (!regexName.test(inputs.name)) errors.name = "Name must be valid";
-    if (inputs.difficulty < 1 || inputs.difficulty > 5) errors.difficulty = "Dificultad must be in the range of 1 to 5";
-    if (inputs.season === "") errors.season = "Season must be valid";
-    if (inputs.countries.length === 0) errors.countries = "Countries is required"
+    if (!inputsautoComplete .name) errors.name = "Name is required";
+    if (!inputsautoComplete .difficulty) errors.difficulty = "Difficulty is required";
+    if (!inputsautoComplete .duration) errors.duration = "Duration is required";
+    if (!inputsautoComplete .season) errors.season = "Season is required";
+    if (!inputsautoComplete .countries) errors.countries = "Countries is required";
+    if (!regexName.test(inputsautoComplete .name)) errors.name = "Name must be valid";
+    if (inputsautoComplete .difficulty < 1 || inputsautoComplete .difficulty > 5) errors.difficulty = "Dificultad must be in the range of 1 to 5";
+    if (inputsautoComplete .season === "") errors.season = "Season must be valid";
+    if (inputsautoComplete .countries.length === 0) errors.countries = "Countries is required"
     return errors;
   }
   function handleSelect(e) {
@@ -105,22 +105,22 @@ export default function Creator() {
       <aside className={style.contain}>
         <form onSubmit={handleSubmit} className={style.form}>
           <label>
-            <input type="text" name="name" value={act.name} onChange={handleChange} placeholder="Activity Name" />
+            <input autoComplete type="text" name="name" value={act.name} onChange={handleChange} placeholder="Activity Name" />
             <span>{error.name}</span>
           </label>
           <label>
             <h2>Select difficulty</h2>
-            <input type="range" name="difficulty" value={act.difficulty} onChange={handleChange} min="1" max="5" />
+            <input autoComplete type="range" name="difficulty" value={act.difficulty} onChange={handleChange} min="1" max="5" />
             <span>{error.difficulty}</span>
           </label>
           <label>
           <h2>Activity Duration</h2>
-            <input type="time" name="duration" value={act.duration} onChange={handleChange} />
+            <input autoComplete type="time" name="duration" value={act.duration} onChange={handleChange} />
             <span>{error.duration}</span>
           </label>
           <label>
           <h2>Select season</h2>
-            <input list="season" name="season" value={act.season} onChange={handleChange} />
+            <input autoComplete list="season" name="season" value={act.season} onChange={handleChange} />
             <datalist id="season">
               <option value="Summer">Summer</option>
               <option value="Fall">Fall</option>
