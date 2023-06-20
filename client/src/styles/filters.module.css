@@ -87,7 +87,7 @@
 .but button {
   margin: 10px 20px;
 }
-.ord article div label input:disabled + span {
+.fil article div label input:disabled + span, .ord article div label input:disabled + span {
   background-color: var(--colorTwo);
 }
 

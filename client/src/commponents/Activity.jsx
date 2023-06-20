@@ -8,7 +8,8 @@ export default function Activity() {
   const navigate = useNavigate();
   function creator() {
     if (access === true) return navigate("/addActivity");
-    return alert("To create a tourist activity, you must not be a guest");
+    navigate("/");
+    return alert("Sign in to your account to create a tourism activity");
   }
   return (
     <main className={style.activity}>

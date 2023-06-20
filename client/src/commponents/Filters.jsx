@@ -37,31 +37,31 @@ export default function Filters({ changeFilter }) {
             <div onClick={handleChange}>
               <label>Select continent</label>
               <label htmlFor="africa">
-                <input id="africa" type="radio" name="continent" value="Africa" />
+                <input id="africa" type="radio" name="continent" value="Africa" disabled={filt.activity !== ""? true : false} />
                 <span>Africa</span>
               </label>
               <label htmlFor="antarctica">
-                <input id="antarctica" type="radio" name="continent" value="Antarctica" />
+                <input id="antarctica" type="radio" name="continent" value="Antarctica" disabled={filt.activity !== ""? true : false} />
                 <span>Antarctica</span>
               </label>
               <label htmlFor="asia">
-                <input id="asia" type="radio" name="continent" value="Asia" />
+                <input id="asia" type="radio" name="continent" value="Asia" disabled={filt.activity !== ""? true : false} />
                 <span>Asia</span>
               </label>
               <label htmlFor="europe">
-                <input id="europe" type="radio" name="continent" value="Europe" />
+                <input id="europe" type="radio" name="continent" value="Europe" disabled={filt.activity !== ""? true : false} />
                 <span>Europe</span>
               </label>
               <label htmlFor="northamerica">
-                <input id="northamerica" type="radio" name="continent" value="North America" />
+                <input id="northamerica" type="radio" name="continent" value="North America" disabled={filt.activity !== ""? true : false} />
                 <span>North America</span>
               </label>
               <label htmlFor="oceania">
-                <input id="oceania" type="radio" name="continent" value="Oceania" />
+                <input id="oceania" type="radio" name="continent" value="Oceania" disabled={filt.activity !== ""? true : false} />
                 <span>Oceania</span>
               </label>
               <label htmlFor="southamerica">
-                <input id="southamerica" type="radio" name="continent" value="South America" />
+                <input id="southamerica" type="radio" name="continent" value="South America" disabled={filt.activity !== ""? true : false} />
                 <span>South America</span>
               </label>
             </div>
@@ -73,7 +73,7 @@ export default function Filters({ changeFilter }) {
               {
                 activities?.map(act => {
                   return <label htmlFor={act.id} key={act.id}>
-                    <input id={act.id} type="radio" name="activity" value={act.name} />
+                    <input id={act.id} type="radio" name="activity" value={act.name} disabled={filt.continent !== "" ? true : false} />
                     <span>{act.name}</span>
                   </label>
                 })
