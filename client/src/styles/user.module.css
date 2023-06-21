@@ -1,0 +1,60 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contain {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--colorOne);
+  padding: 30px;
+}
+.contain figure {
+  width: 150px;
+  height: 150px;
+  margin-right: 50px;
+}
+.contain figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.contain div {
+  width: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.contain div h1, .contain div h3 {
+  font-size: 1.2rem;
+  color: var(--colorFive);
+  user-select: none;
+  margin-bottom: 20px;
+}
+.contain div h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.contain div h3 span {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 500px) {
+  .contain div h1, .contain div h3 {
+    font-size: 1.8rem;
+  }
+  .contain div h1 {
+    font-size: 3rem;
+  }
+  .contain div h3 span {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 601px) {
+  .contain {
+    border-radius: 10px;
+  }
+}

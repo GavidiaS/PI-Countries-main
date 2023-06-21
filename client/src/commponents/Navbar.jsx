@@ -19,6 +19,11 @@ export default function Navbar({ changeNav }) {
         <NavLink onClick={changeNav} to="/activity">Activity</NavLink>
         {
           access === true
+          ? <NavLink onClick={changeNav} to="/profile">Profile</NavLink>
+          : null
+        }
+        {
+          access === true
           ? <NavLink onClick={() => {changeNav(); logOut()}} to="/">Log out</NavLink>
           : <NavLink onClick={changeNav} to="/">Exit</NavLink>
         }

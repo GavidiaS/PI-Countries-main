@@ -1,7 +1,5 @@
 body {
-  background-image: url("./assets/home.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: var(--colorFour);
   padding-top: 6vh;
 }
 header, footer, main {
@@ -12,4 +10,12 @@ header, footer {
 }
 main {
   min-height: 88vh;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-image: url("./assets/home_large.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 }

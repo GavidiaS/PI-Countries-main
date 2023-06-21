@@ -10,6 +10,7 @@ import Home from './commponents/Home';
 import Detail from './commponents/Detail';
 import Activity from './commponents/Activity';
 import Creator from './commponents/Creator';
+import Profile from './commponents/Profile';
 
 function App() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function App() {
         <Route path='/activity' element={<Activity />} />
         <Route path='/detail/:id' element={<Detail />} />
         <Route path='/addActivity' element={<Creator />} />
+        <Route path='/profile' element={<Profile />} />
       </Routes>
       <Footer />
     </>
